@@ -1,0 +1,183 @@
+@font-face {
+    font-family: VEGeorgianBrushCyrillicGreek; /* Имя шрифта */
+    src: url(../FF/VEGeorgianBrushCyrillicGreek.ttf); /* Путь к файлу со шрифтом */
+}
+
+*{
+	font-family: VEGeorgianBrushCyrillicGreek;
+	font-weight: bold;
+}
+body{
+	background-color: #ddd;	
+	background-image: url(../fons/360_07.png);
+}
+
+#bs-example-navbar-collapse-1{
+	font-size: 150%;
+	color: black;
+}
+
+.headings{
+	font-size: 200%;
+	text-align: center;
+}
+
+.navbar-default{
+	background-color: #ddd;
+}
+
+.navbar-brand{
+	width: 165px;
+}
+.navbar{
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.img-circle{
+ 	height: 200px;
+ 	float: right;
+ 	border: 
+}
+
+#brand{
+	width: 130px;
+ 	margin-top: -30px;
+}
+
+
+
+#information{
+	margin-top: 100px;
+	padding-left: 15px;
+	background-color: #FFF;
+	border-radius: 10px;
+	background-image: url(../images/oformlenie-64.png);
+	background-size: 100px;
+	background-repeat: no-repeat;
+	font-size: 130%;
+}
+
+#information img{
+	margin: 5px 0;
+	border: 10px dotted #ddd;
+}
+
+#name_skills{
+	padding: 0;
+	margin-top: 20px;
+	background-color: green;
+	border-radius: 10px 10px 0 0;
+	background-image: url(../fons/name_skills.png);
+	
+}
+
+#about_me{
+	padding: 30px;
+	background-color: #FFF;
+	background: url(../images/101155105.png) repeat-y,
+			    url(../images/101155105.png) 100% 0 repeat-y  #FFF;
+	
+}
+
+#about_me p,cite{
+	font-size: 20px;
+}
+
+#about_me blockquote{
+	text-align: center;
+	border: none;
+}
+
+
+.g_skills{
+	color: green;
+}
+
+.y_skills{
+	color: gold;
+}
+
+.r_skills{
+	color: red;
+}
+
+#skills{
+	background-color: #FFF;
+	padding: 10px 30px;	
+}
+
+#work,
+#contacts
+{
+
+	background-color: #FFF;
+}
+
+.container > .row{
+	border-radius: 0 0 10px 10px;
+}
+
+#contacts {
+	padding: 10px;
+	font-size: 36px;	
+}
+
+#contacts img{
+	float: right;
+}
+
+#hobbies{
+	background-color: #FFF;
+	text-align: center;
+	padding: 10px;
+}
+
+#hobbies img{
+	margin: 0 auto;
+	display: block;
+    max-width: 100%;
+}
+
+footer{
+	margin-top: 20px;
+	padding: 0 10px;
+	height: 50px;
+	background-color: #A9A9A9;
+	color: #fff;
+	text-align: right;
+	border-radius: 10px 10px 0 0;
+}
+
+
+@media (max-width: 768px) {
+	h2{
+		text-align: center;
+	}
+	#skills{
+	background-color: #FFF;
+	padding: 0;	
+	}
+	#contacts img{
+	width: 40px;
+	}
+	#contacts{
+		font-size: 20px;
+	}
+	#img-circle{
+	
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
