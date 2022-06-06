@@ -1,0 +1,155 @@
+@import "variables";
+@import "global";
+@import "header";
+@import "footer";
+@import "feedback";
+@import "breadcrumbs";
+@import "cookies";
+
+.auction-companies{
+    padding: 30px;
+    &__select{
+        max-width: 300px;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+    
+}
+
+.table {
+    position: relative;
+    display: table;
+    width: 100%;
+    &__row {
+        display: table-row;
+    }
+    &__cell {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 15px;
+        line-height: 21px;
+        color: $main-color;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 20px 0;
+        & > * {
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            justify-content: center;
+        }
+        .country{
+            // margin-left: auto;
+            // justify-content: flex-end;
+            img{
+                width: auto;
+                height: 30px;
+                margin-left: 15px;
+            }
+        }
+        a{
+            color: $table-links-color;
+            text-decoration: underline;
+            &:hover{
+                color: #5FB0E4;
+            }
+        }
+    }
+    &__header &__cell{
+        position: relative;
+        line-height: 18px;
+        font-weight: 600;
+        letter-spacing: -0.2px;
+        color: $gray-text;
+        // border-bottom: 1px solid #ccc;
+        & > * {
+            height: 40px;
+            white-space: nowrap;
+            // flex-direction: column;
+            justify-content: center;
+            .subtitle {
+                margin-top: 4px;
+                font-size: 11px;
+                line-height: 13px;
+                font-weight: normal;
+                color: $gray-text;
+                text-transform: uppercase;
+                white-space: nowrap;
+            }
+            &.mob {
+                display: none;
+            }
+        }
+    }
+    &__row &__cell:first-child {
+		& > * {
+			justify-content: flex-start;
+            align-items: center;
+            padding-left: 50px;
+		}
+	}
+    &__row &__cell:last-child {
+		& > * {
+			justify-content: flex-end;
+            align-items: center;
+            padding-right: 50px;
+		}
+	}
+
+    &__row:not(.table__header) &__cell{
+        position: relative;
+        padding: 12px 0;
+        & > * {
+            min-height: 40px;
+        }
+    }
+    
+}
+
+@media (max-width: 1539px) {
+    
+}
+
+@media (max-width: 1299px) {
+    .table__row .table__cell:first-child>*{
+        padding-left: 30px;
+    }
+    .table__row .table__cell:last-child>*{
+        padding-right: 30px;
+    }
+    
+}
+
+@media (max-width: 959px) {
+    .table__row .table__cell:nth-child(4)>*{
+        display: none;
+    }
+}
+
+@media (max-width: 779px) {
+    .table__row .table__cell:first-child>*{
+        padding-left: 15px;
+    }
+    .table__row .table__cell:last-child>*{
+        padding-right: 15px;
+    }
+    .table__row .table__cell:nth-child(3)>*{
+        display: none;
+    }
+    .auction-companies{
+        padding: 15px;
+    }
+    .table__cell{
+        padding: 10px 0;
+    }
+    .table__row .table__cell:first-child>*,
+    .table__row .table__cell:last-child>*{
+        padding: 0 10px;
+    }
+    
+}
+
+@media(max-width: 639px) {
+    .table__cell .country img{
+        display: none;
+    }
+}
